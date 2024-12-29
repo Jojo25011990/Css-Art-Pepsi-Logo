@@ -12,6 +12,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   height: 100vh;
