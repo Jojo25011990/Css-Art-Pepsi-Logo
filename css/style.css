@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pepsi__heading {
+  color: #fff;
+  font-size: 10rem;
+  font-style: italic;
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+.pepsi__heading-s1 {
+  color: #da473c;
+}
+.pepsi__heading-s2 {
+  color: #34588e;
+}
+
+.pepsi {
+  position: relative;
+  width: 35rem;
+  height: 35rem;
+  border: 1.2rem solid #fff;
+  border-radius: 50%;
+  background-color: #34588e;
+  overflow: hidden;
+}
+.pepsi::before {
+  content: "";
+  position: absolute;
+  top: -26.5rem;
+  left: -18.4rem;
+  width: 52rem;
+  height: 52rem;
+  background-color: #fff;
+  border-radius: 25%;
+}
+.pepsi::after {
+  content: "";
+  position: absolute;
+  top: -27.5rem;
+  left: -20.2rem;
+  width: 52rem;
+  height: 52rem;
+  background-color: #da473c;
+  border-radius: 50%;
+}
